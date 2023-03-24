@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_crm_dashboard" model="ir.actions.client">
+            <field name="name">Crm Dashboard</field>
+            <field name="tag">crm_dashboard</field>
+            <field name="target">current</field>
+        </record>
+
+        <record id="crm_manager_view" model="ir.ui.view">
+            <field name="name">crm.manager.select</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='extra']//field[@name='company_id']" position="after">
+                    <field name="crm_manager_id"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <menuitem
+                id="crm_dashboard"
+                name="Crm Dashboard"
+                action="action_crm_dashboard"
+                parent="crm.crm_menu_report"/>
+
+
+    </data>
+</odoo>

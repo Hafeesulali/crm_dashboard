@@ -1,0 +1,82 @@
+:root {
+    /* Primary */
+    --mauve: #7D7EAF;
+
+    /* Light */
+    --mauve-light: #e5e5ef;
+
+
+}
+
+/* Background */
+.bg-mauve-light {
+    background-color: var(--mauve-light);
+}
+
+
+
+/* Text */
+.text-mauve {
+    color: var(--mauve);
+}
+
+
+/* Cards */
+
+.dashboard-card {
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.7rem 1.5rem 1.5rem 1.5rem;
+    margin: 1rem auto;
+    height: 90px;
+}
+
+.dashboard-card__icon-container {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.dashboard-card__icon-container i {
+	font-size: 20px;
+}
+
+.dashboard-card__details {
+    margin-left: 1rem;
+    max-width: 120px;
+}
+
+.dashboard-card__details h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.dashboard-card__details h4 {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: var(--grey);
+    margin-top: -5px;
+}
+
+h2.section-header {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.chart-container {
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+
+
+
+/* Misc */
+.card-shadow {
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(222, 222, 222, 1);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(222, 222, 222, 1);
+    box-shadow: 1px 3px 5px 0px rgba(222, 222, 222, 1);
+}
+
